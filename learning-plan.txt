@@ -1,0 +1,399 @@
+C++ MASTER LEARNING PATH — FROM BEGINNER TO ADVANCED (JOB-READY)
+===============================================================
+
+PURPOSE
+-------
+This document is a single source of truth for learning C++ from zero to advanced,
+with a strong focus on:
+- Interview readiness (FAANG / FinTech / Quant Dev)
+- Systems-level understanding (memory, performance, OS interaction)
+- Clean, modern C++ (C++17 / C++20)
+- Real-world engineering and quantitative development skills
+
+Use this as a living document. Revisit sections, add notes, and link projects.
+
+------------------------------------------------------------
+SECTION 0 — MINDSET & META-SKILLS
+------------------------------------------------------------
+- How C++ is used in industry (trading systems, engines, infra, OS tools)
+- Why C++ for performance-critical systems
+- How interviews actually evaluate C++ knowledge
+- Thinking in memory, not just syntax
+- Debug-first mindset
+- Reading compiler errors effectively
+- Using documentation (cppreference.com)
+- Writing minimal reproducible examples
+
+------------------------------------------------------------
+SECTION 1 — ENVIRONMENT & TOOLING
+------------------------------------------------------------
+Toolchains
+- GCC vs Clang
+- macOS toolchain (clang++)
+- Linux toolchain (g++)
+- Windows (MSVC basics)
+
+Build Tools
+- Single-file compilation
+- Multi-file projects
+- Makefiles (beginner → advanced)
+- CMake (modern CMake, targets, linking)
+
+Editors & Debugging
+- VS Code setup
+- Compiler flags (-Wall -Wextra -O0/-O2)
+- Debuggers (lldb / gdb)
+- Sanitizers (ASAN, UBSAN)
+- Static analysis
+
+------------------------------------------------------------
+SECTION 2 — CORE C++ SYNTAX (FOUNDATIONS)
+------------------------------------------------------------
+Basics
+- main()
+- iostream
+- Namespaces
+- Using std::
+- Comments
+
+Types
+- int, float, double
+- char, bool
+- signed vs unsigned
+- sizeof
+- Type limits
+
+Variables
+- Declaration vs definition
+- Initialization styles
+- const correctness
+
+Control Flow
+- if / else
+- switch
+- for / while / do-while
+- break / continue
+
+------------------------------------------------------------
+SECTION 3 — FUNCTIONS & PROGRAM STRUCTURE
+------------------------------------------------------------
+Functions
+- Declaration vs definition
+- Return types
+- void
+- Pass by value
+- Pass by reference
+- Pass by pointer
+- const references
+
+Headers
+- .h vs .cpp
+- Include guards
+- #pragma once
+
+------------------------------------------------------------
+SECTION 4 — ARRAYS, STRINGS & STL BASICS
+------------------------------------------------------------
+Arrays
+- Static arrays
+- Bounds and pitfalls
+
+Strings
+- std::string
+- c-style strings
+- Common string operations
+
+STL Containers
+- vector
+- array
+- deque
+- list
+- map / unordered_map
+- set / unordered_set
+
+Iterators
+- begin/end
+- iterator invalidation
+
+------------------------------------------------------------
+SECTION 5 — OBJECT-ORIENTED PROGRAMMING (OOP)
+------------------------------------------------------------
+Classes
+- class vs struct
+- Public / private / protected
+- Encapsulation
+
+Constructors
+- Default constructor
+- Parameterized constructor
+- Constructor initializer lists
+- Explicit constructors
+
+Destructors
+- When destructors run
+- RAII concept
+
+Methods
+- const methods
+- static methods
+
+This Pointer
+- this keyword
+
+------------------------------------------------------------
+SECTION 6 — MEMORY MODEL (CRITICAL FOR INTERVIEWS)
+------------------------------------------------------------
+Memory Layout
+- Stack
+- Heap
+- Static storage
+- Code segment
+
+Pointers
+- Pointer basics
+- nullptr
+- Pointer arithmetic
+- Dangling pointers
+- Double free
+
+References
+- Lvalue vs rvalue references
+- When to use references vs pointers
+
+Dynamic Memory
+- new / delete
+- new[] / delete[]
+- Memory leaks
+
+Smart Pointers
+- unique_ptr
+- shared_ptr
+- weak_ptr
+- Ownership semantics
+
+------------------------------------------------------------
+SECTION 7 — COPY & MOVE SEMANTICS (RULE OF 5)
+------------------------------------------------------------
+Copying
+- Copy constructor
+- Copy assignment operator
+
+Moving
+- Move constructor
+- Move assignment operator
+
+Rule of 0 / 3 / 5
+- When each applies
+
+Deep vs Shallow copy
+
+------------------------------------------------------------
+SECTION 8 — ADVANCED OOP & POLYMORPHISM
+------------------------------------------------------------
+Inheritance
+- Base / derived classes
+- virtual functions
+- override keyword
+
+Polymorphism
+- Dynamic dispatch
+- vtables (conceptual understanding)
+
+Destructors
+- Virtual destructors
+- Why they matter
+
+------------------------------------------------------------
+SECTION 9 — TEMPLATES & GENERIC PROGRAMMING
+------------------------------------------------------------
+Templates
+- Function templates
+- Class templates
+
+Specialization
+- Full specialization
+- Partial specialization
+
+Type Traits
+- std::enable_if
+- std::conditional
+- std::is_same
+
+Concepts (C++20)
+- requires
+- constraints
+
+------------------------------------------------------------
+SECTION 10 — STL ALGORITHMS & FUNCTIONAL STYLE
+------------------------------------------------------------
+Algorithms
+- sort
+- find
+- binary_search
+- accumulate
+- transform
+
+Lambdas
+- Capture by value/reference
+- Mutable lambdas
+
+Ranges (C++20)
+- Views
+- Lazy evaluation
+
+------------------------------------------------------------
+SECTION 11 — ERROR HANDLING & SAFETY
+------------------------------------------------------------
+Error Handling
+- Return codes
+- Exceptions
+- try/catch
+- noexcept
+
+Assertions
+- assert
+- static_assert
+
+------------------------------------------------------------
+SECTION 12 — PERFORMANCE & OPTIMIZATION
+------------------------------------------------------------
+Performance Basics
+- Big-O analysis
+- Cache locality
+- Branch prediction
+
+Compiler Optimizations
+- O0 vs O2 vs O3
+- Inlining
+- LTO
+
+Data-Oriented Design
+- Struct of arrays vs array of structs
+
+------------------------------------------------------------
+SECTION 13 — CONCURRENCY & MULTITHREADING
+------------------------------------------------------------
+Threads
+- std::thread
+- join vs detach
+
+Synchronization
+- mutex
+- lock_guard
+- unique_lock
+
+Atomics
+- std::atomic
+- Memory ordering (conceptual)
+
+Thread Safety
+- Race conditions
+- Deadlocks
+
+------------------------------------------------------------
+SECTION 14 — LOW-LEVEL & SYSTEMS C++
+------------------------------------------------------------
+Bit Manipulation
+- Bitwise operators
+
+Alignment & Padding
+- alignas
+- sizeof impact
+
+Endianness
+
+Interfacing with C
+- extern "C"
+
+------------------------------------------------------------
+SECTION 15 — FILE I/O & OS INTERACTION
+------------------------------------------------------------
+File Streams
+- ifstream / ofstream
+- Binary I/O
+
+Command-line Arguments
+- argc / argv
+
+------------------------------------------------------------
+SECTION 16 — TESTING & DEBUGGING
+------------------------------------------------------------
+Debugging
+- Breakpoints
+- Watch variables
+- Stack traces
+
+Testing
+- Unit testing basics
+- GoogleTest overview
+
+------------------------------------------------------------
+SECTION 17 — INTERVIEW QUESTIONS (CORE)
+------------------------------------------------------------
+- Stack vs heap
+- When destructors run
+- Smart pointer ownership
+- struct vs class
+- virtual vs non-virtual
+- const correctness
+- vector vs list
+- map vs unordered_map
+
+------------------------------------------------------------
+SECTION 18 — INTERVIEW QUESTIONS (ADVANCED)
+------------------------------------------------------------
+- Explain move semantics
+- What is undefined behavior?
+- How does virtual dispatch work?
+- What is RAII?
+- How does std::shared_ptr work internally?
+- False sharing
+- ABA problem
+
+------------------------------------------------------------
+SECTION 19 — PROJECTS (MANDATORY)
+------------------------------------------------------------
+Beginner
+- Grade calculator
+- CLI tools
+
+Intermediate
+- File parser
+- Data structures from scratch
+
+Advanced
+- Multithreaded system
+- Market data simulator
+- Order book implementation
+
+------------------------------------------------------------
+SECTION 20 — QUANT / FINTECH FOCUS
+------------------------------------------------------------
+- Low-latency design principles
+- Deterministic memory usage
+- Lock-free thinking (conceptual)
+- Numerical stability
+- Data pipelines
+
+------------------------------------------------------------
+SECTION 21 — WHAT “JOB READY” MEANS
+------------------------------------------------------------
+You should be able to:
+- Explain memory layout without notes
+- Debug crashes confidently
+- Write clean modern C++
+- Discuss trade-offs
+- Read large codebases
+- Pass whiteboard & system design rounds
+
+------------------------------------------------------------
+FINAL NOTE
+------------------------------------------------------------
+Mastery comes from:
+- Writing code
+- Breaking it
+- Fixing it
+- Explaining it
+
+This document is the roadmap.
+The work is execution.
